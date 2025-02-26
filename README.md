@@ -8,40 +8,6 @@ Bibliothèque Laravel is a web application built using the Laravel framework. It
 - **Event Broadcasting**: Real-time updates using Laravel's event broadcasting system.
 - **Logging**: Custom log entries are created for each book event, storing relevant information in the database.
 
-## Project Structure
-```
-bibliotheque_laravel
-├── app
-│   ├── Events
-│   │   └── Books
-│   │       ├── CreateBookEvent.php
-│   │       ├── DeleteBookEvent.php
-│   │       ├── ReadBookEvent.php
-│   │       └── UpdateBookEvent.php
-│   ├── Listeners
-│   │   └── Books
-│   │       ├── CreateBookListener.php
-│   │       ├── DeleteBookListener.php
-│   │       ├── ReadBookListener.php
-│   │       └── UpdateBookListener.php
-│   ├── Models
-│   │   └── LogEntry.php
-│   └── Providers
-│       └── EventServiceProvider.php
-├── database
-│   └── migrations
-│       └── create_log_entries_table.php
-├── resources
-│   └── js
-│       ├── app.js
-│       └── bootstrap.js
-├── routes
-│   └── web.php
-└── app
-    └── Http
-        └── Kernel.php
-```
-
 ## Installation
 1. Clone the repository:
    ```
